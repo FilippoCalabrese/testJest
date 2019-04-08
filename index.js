@@ -1,29 +1,20 @@
-function bubbleSort(arr) {
 
-  const len = arr.length;
-  for (var i = 0; i < len ; i++) {
-    for(var j = 0 ; j < len - i - 1; j++){
-    if (arr[j] > arr[j + 1]) {
-      var temp = arr[j];
-      arr[j] = arr[j+1];
-      arr[j + 1] = temp;
+function generateBitMap(width, height, number){
+  let maps = [];
+
+  for(let k=0; k<number; k++){
+    let map = Array(width*height).fill(0).map(x => Array(4).fill(0));
+
+    for (let i =0; i<width*height; i++) {
+      for(let j = 0; j<4; j++){
+        map[i][j]=Math.floor(Math.random() * 256);
+      }
     }
-   }
+
+    maps.push(map);
   }
-  return arr;
+
+  return maps;
 }
 
-function mergeArray(arr1, arr2) {
-    var a = arr1.concat(arr2);
-    for(var i=0; i<a.length; ++i) {
-        for(var j=i+1; j<a.length; ++j) {
-            if(a[i] === a[j])
-                a.splice(j--, 1);
-        }
-    }
-
-    return a;
-};
-
-exports.bubbleSort=bubbleSort;
-exports.mergeArray=mergeArray;
+exports.generateBitMap=generateBitMap;
