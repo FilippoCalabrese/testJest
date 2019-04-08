@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/FilippoCalabrese/testJest.svg?branch=master)](https://travis-ci.org/FilippoCalabrese/testJest)
+[![Build Status](https://travis-ci.org/FilippoCalabrese/testJest.svg?branch=master)](https://travis-ci.org/FilippoCalabrese/testJest) [![StyleCI](https://github.styleci.io/repos/180119054/shield?branch=master)](https://github.styleci.io/repos/180119054)
